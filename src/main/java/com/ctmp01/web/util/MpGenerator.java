@@ -101,7 +101,7 @@ public class MpGenerator {
         PackageConfig pc = new PackageConfig();
         pc.setParent("com.ctmp01");
         pc.setModuleName("web");
-        pc.setController("com/ctmp01/controller");
+        pc.setController("controller");
         mpg.setPackageInfo(pc);
 
         // 注入自定义配置，可以在 VM 中使用 cfg.abc 【可无】
