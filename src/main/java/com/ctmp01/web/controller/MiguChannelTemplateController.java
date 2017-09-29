@@ -29,8 +29,8 @@ public class MiguChannelTemplateController extends BaseController{
 	@Resource
     private MiguChannelTemplateService miguChannelTemplateService;
     @PostMapping("/updateAllColumnById")
-	public ApiResult updateAllColumnById(@RequestBody String id){
-        String processId = JsonUtil.toObject(id, HashMap.class)
+	public ApiResult updateAllColumnById(@RequestBody String  id){
+       String processId = JsonUtil.toObject(id, HashMap.class)
                 .get("id").toString();
         Integer it = Integer.valueOf(processId);
  return new ApiResult(RESPONSE.SUCCESS, "成功", miguChannelTemplateService.selectById(it));
