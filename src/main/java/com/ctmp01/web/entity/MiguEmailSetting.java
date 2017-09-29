@@ -9,27 +9,41 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 渠道模板表
+ * 邮件设置表
  * </p>
  *
  * @author 
  * @since 2017-09-29
  */
-@TableName("t_migu_channel_template")
-public class MiguChannelTemplate extends Model<MiguChannelTemplate> {
+@TableName("t_migu_email_setting")
+public class MiguEmailSetting extends Model<MiguEmailSetting> {
 
     private static final long serialVersionUID = 1L;
 
 	@TableId(value="id", type= IdType.AUTO)
 	private Integer id;
     /**
-     * 渠道名称
+     * 收件人
      */
-	private String name;
+	private String receiver;
     /**
-     * 渠道地址
+     * 抄送人
      */
-	private String address;
+	private String copyer;
+    /**
+     * 主题
+     */
+	private String theme;
+    /**
+     * 列表名称
+     */
+	@TableField("list_name")
+	private String listName;
+    /**
+     * 测试类型id
+     */
+	@TableField("test_type_id")
+	private Integer testTypeId;
     /**
      * 插入时间
      */
@@ -50,20 +64,44 @@ public class MiguChannelTemplate extends Model<MiguChannelTemplate> {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getReceiver() {
+		return receiver;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setReceiver(String receiver) {
+		this.receiver = receiver;
 	}
 
-	public String getAddress() {
-		return address;
+	public String getCopyer() {
+		return copyer;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setCopyer(String copyer) {
+		this.copyer = copyer;
+	}
+
+	public String getTheme() {
+		return theme;
+	}
+
+	public void setTheme(String theme) {
+		this.theme = theme;
+	}
+
+	public String getListName() {
+		return listName;
+	}
+
+	public void setListName(String listName) {
+		this.listName = listName;
+	}
+
+	public Integer getTestTypeId() {
+		return testTypeId;
+	}
+
+	public void setTestTypeId(Integer testTypeId) {
+		this.testTypeId = testTypeId;
 	}
 
 	public String getInsertTime() {

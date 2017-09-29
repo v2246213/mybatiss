@@ -63,7 +63,7 @@ public class MpGenerator {
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("123456");
-        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/mydb?characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/ctmp?characterEncoding=utf8");
         mpg.setDataSource(dsc);
 
         // 策略配置
@@ -73,7 +73,15 @@ public class MpGenerator {
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
         // strategy.setDbColumnUnderline(true);
         strategy.setInclude(new String[] {
-                "t_migu_channel_template",
+                "t_migu_case_task_template",
+                "t_migu_case_manage",
+                "t_migu_dir_stair",
+                "t_migu_email_setting",
+                "t_migu_group_people",
+                "t_migu_history",
+                "t_migu_report_template",
+                "t_migu_task_manage",
+                "t_migu_test_type"
 
         }); // 需要生成的表
         // strategy.setExclude(new String[]{"test"}); // 排除生成的表
@@ -101,7 +109,7 @@ public class MpGenerator {
         PackageConfig pc = new PackageConfig();
         pc.setParent("com.ctmp01");
         pc.setModuleName("web");
-        pc.setController("com/ctmp01/controller");
+        pc.setController("controller");
         mpg.setPackageInfo(pc);
 
         // 注入自定义配置，可以在 VM 中使用 cfg.abc 【可无】

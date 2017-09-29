@@ -131,7 +131,7 @@
         </filter>
     </appender>
 
-    <logger name="com.wangsocial.app" level="DEBUG" />
+    <logger name="com.ctmp01.web" level="DEBUG" />
     <logger name="org.springframework" level="WARN" />
     <logger name="org.hibernate" level="WARN" />
     <logger name="springfox" level="OFF" />

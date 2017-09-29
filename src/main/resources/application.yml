@@ -25,9 +25,10 @@ spring:
       prefix: /WEB-INF/view/
       suffix: .jsp
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/mydb?characterEncoding=utf8
-    username: root
-    password: 123456
+    url: jdbc:mysql://192.168.148.251:3306/ctmp02?characterEncoding=utf8
+
+    username: admin
+    password: some_pass
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
@@ -59,6 +60,14 @@ spring:
   output:
     ansi:
       enabled: always
+# mongodb 配置
+  data:
+    mongodb:
+      host: 192.168.148.251
+      port: 27017
+      database: ctmp02
+      username: kobe
+      password: rootkobe
 
 debug: false
 
@@ -88,6 +97,7 @@ spring:
       suffix: .jsp
   datasource:
     url: jdbc:mysql://192.168.1.128:3306/mydb-test?characterEncoding=utf8
+
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
@@ -121,6 +131,9 @@ spring:
   output:
     ansi:
       enabled: always
+  data:
+    mongodb:
+      host:
 
 debug: false
 
@@ -131,6 +144,7 @@ logging:
   file: ./logs/app-logging.log
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
+
 
 
 ---

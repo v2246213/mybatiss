@@ -1,6 +1,8 @@
 package com.ctmp01.web.util;
 
 
+import org.springframework.beans.factory.annotation.Value;
+
 import java.text.MessageFormat;
 import java.util.ResourceBundle;
 
@@ -8,7 +10,7 @@ import java.util.ResourceBundle;
  * Created by Administrator on 2017/6/27.
  */
 public class PropertiesUtils {
-    private static final String FILEPATH = "jpush";
+    private static final String FILEPATH = "api_code.properties";
 
     public static int bundleToInt(String key) {
         return Integer.parseInt(ResourceBundle.getBundle(FILEPATH).getString(
@@ -73,8 +75,7 @@ public class PropertiesUtils {
 		}*/
         return MessageFormat.format(str, arguments);
     }
-
     public static void main(String[] args) {
-        System.out.println(getValueByKey("add_group_key", FILEPATH));
+        System.out.println(getValueByKey("api_code_msg_1", FILEPATH));
     }
 }

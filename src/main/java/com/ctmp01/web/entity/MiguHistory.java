@@ -9,27 +9,29 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 渠道模板表
+ * 历史记录表
  * </p>
  *
  * @author 
  * @since 2017-09-29
  */
-@TableName("t_migu_channel_template")
-public class MiguChannelTemplate extends Model<MiguChannelTemplate> {
+@TableName("t_migu_history")
+public class MiguHistory extends Model<MiguHistory> {
 
     private static final long serialVersionUID = 1L;
 
 	@TableId(value="id", type= IdType.AUTO)
 	private Integer id;
     /**
-     * 渠道名称
+     * 报道模板id
      */
-	private String name;
+	@TableField("report_id")
+	private Integer reportId;
     /**
-     * 渠道地址
+     * 记录内容
      */
-	private String address;
+	@TableField("record_content")
+	private String recordContent;
     /**
      * 插入时间
      */
@@ -40,6 +42,8 @@ public class MiguChannelTemplate extends Model<MiguChannelTemplate> {
      */
 	@TableField("update_time")
 	private String updateTime;
+	@TableField("t_migu_report_template_id")
+	private Integer tMiguReportTemplateId;
 
 
 	public Integer getId() {
@@ -50,20 +54,20 @@ public class MiguChannelTemplate extends Model<MiguChannelTemplate> {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public Integer getReportId() {
+		return reportId;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setReportId(Integer reportId) {
+		this.reportId = reportId;
 	}
 
-	public String getAddress() {
-		return address;
+	public String getRecordContent() {
+		return recordContent;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setRecordContent(String recordContent) {
+		this.recordContent = recordContent;
 	}
 
 	public String getInsertTime() {
@@ -80,6 +84,14 @@ public class MiguChannelTemplate extends Model<MiguChannelTemplate> {
 
 	public void setUpdateTime(String updateTime) {
 		this.updateTime = updateTime;
+	}
+
+	public Integer gettMiguReportTemplateId() {
+		return tMiguReportTemplateId;
+	}
+
+	public void settMiguReportTemplateId(Integer tMiguReportTemplateId) {
+		this.tMiguReportTemplateId = tMiguReportTemplateId;
 	}
 
 	@Override

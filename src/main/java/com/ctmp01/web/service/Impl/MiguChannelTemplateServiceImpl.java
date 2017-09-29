@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author 
- * @since 2017-09-27
+ * @since 2017-09-29
  */
 @Service
 public class MiguChannelTemplateServiceImpl extends ServiceImpl<MiguChannelTemplateMapper, MiguChannelTemplate> implements MiguChannelTemplateService {
