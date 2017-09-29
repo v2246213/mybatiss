@@ -33,6 +33,6 @@ public class MiguChannelTemplateController extends BaseController{
        String processId = JsonUtil.toObject(id, HashMap.class)
                 .get("id").toString();
         Integer it = Integer.valueOf(processId);
- return new ApiResult(RESPONSE.SUCCESS, "成功", miguChannelTemplateService.selectById(it));
+ return new ApiResult(RESPONSE.SUCCESS, "成功", miguChannelTemplateService.selectById(it)  );
 }
 }
