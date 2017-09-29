@@ -67,12 +67,6 @@
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-			<version>RELEASE</version>
-		</dependency>
-
-		<dependency>
 			<groupId>com.cuisongliu</groupId>
 			<artifactId>druid-spring-boot-starter</artifactId>
 			<version>${druid.starter.version}</version>
