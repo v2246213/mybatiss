@@ -1,5 +1,6 @@
 package com.ctmp01.web.controller;
 
+<<<<<<< HEAD
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.ctmp01.web.controller.base.BaseController;
 import com.ctmp01.web.entity.MiguChannelTemplate;
@@ -18,6 +19,14 @@ import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+=======
+import com.ctmp01.web.entity.MiguChannelTemplate;
+import com.ctmp01.web.service.MiguChannelTemplateService;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
+>>>>>>> origin/master
 
 /**
  * <p>
@@ -27,6 +36,7 @@ import java.util.Map;
  * @author 
  * @since 2017-09-29
  */
+<<<<<<< HEAD
 @RestController
 @RequestMapping("/web/miguChannelTemplate")
 public class MiguChannelTemplateController extends BaseController{
@@ -38,5 +48,16 @@ public class MiguChannelTemplateController extends BaseController{
                 .get("id").toString();
         Integer it = Integer.valueOf(processId);
  return new ApiResult(RESPONSE.SUCCESS, "成功", miguChannelTemplateService.selectById(it));
+=======
+ @RestController
+@RequestMapping("/web/miguChannelTemplate")
+public class MiguChannelTemplateController {
+    @Resource
+    private MiguChannelTemplateService miguChannelTemplateService;
+@PostMapping("/selectMiguChannelTemplate")
+    public Boolean selectMiguChannelTemplate(@RequestBody  MiguChannelTemplate miguChannelTemplate){
+   Boolean l= miguChannelTemplateService.updateById(miguChannelTemplate);
+        return l;
+>>>>>>> origin/master
     }
 }
