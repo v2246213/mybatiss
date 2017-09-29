@@ -1,6 +1,7 @@
 package com.ctmp01.web.util.enums;
 
 import com.ctmp01.web.util.PropertiesUtil;
+import com.ctmp01.web.util.PropertiesUtils;
 import com.ctmp01.web.util.constants.RESPONSE;
 
 

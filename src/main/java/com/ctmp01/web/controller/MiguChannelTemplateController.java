@@ -34,5 +34,5 @@ public class MiguChannelTemplateController extends BaseController{
                 .get("id").toString();
         Integer it = Integer.valueOf(processId);
  return new ApiResult(RESPONSE.SUCCESS, "成功", miguChannelTemplateService.selectById(it));
-
-}}
+}
+}
