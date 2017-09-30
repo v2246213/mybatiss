@@ -73,7 +73,18 @@ public class MpGenerator {
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
         // strategy.setDbColumnUnderline(true);
         strategy.setInclude(new String[] {
-                "t_migu_case_task_template"
+                "t_migu_case_manage",
+                "t_migu_case_record",
+                "t_migu_case_task_template",
+                "t_migu_channel_template",
+                "t_migu_dir_stair",
+                "t_migu_email_setting",
+                "t_migu_group_people",
+                "t_migu_history",
+                "t_migu_report_template",
+                "t_migu_task_manage",
+                "t_migu_test_type"
+
 
         }); // 需要生成的表
         // strategy.setExclude(new String[]{"test"}); // 排除生成的表
