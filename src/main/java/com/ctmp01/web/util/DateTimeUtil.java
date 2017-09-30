@@ -196,7 +196,7 @@ public class DateTimeUtil {
 	public static void main(String[] args) {
 		// System.out.println(
 		// convertLocalDateTimeToStringWithoutMillionsecond(
-		// convertDateToLocalDateTime(new Date()), "yyyy-MM-dd HH:mm:ss")
+		 //convertDateToLocalDateTime(new Date()), "yyyy-MM-dd HH:mm:ss")
 		// );
 		// System.out.println(convertDateToLocalDateTime());
 		// System.out.println(
@@ -313,7 +313,7 @@ public class DateTimeUtil {
 		if (date == null) {
 			return "";
 		}
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
 		LocalDateTime localDateTime = convertDateToLocalDateTime(date);
 		return localDateTime.format(dtf);
 	}

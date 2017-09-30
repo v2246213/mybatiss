@@ -25,7 +25,7 @@ spring:
       prefix: /WEB-INF/view/
       suffix: .jsp
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/ctmp?characterEncoding=utf8
+    url: jdbc:mysql://192.168.149.10:3306/ctmp?characterEncoding=utf8
 
     username: root
     password: 123456
