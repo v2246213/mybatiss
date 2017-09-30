@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * <p>
- * 人员分组表 前端控制器
+ *  前端控制器
  * </p>
  *
  * @author 
- * @since 2017-09-29
+ * @since 2017-09-30
  */
 @Controller
 @RequestMapping("/web/miguGroupPeople")
