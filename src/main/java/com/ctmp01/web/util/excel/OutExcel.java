@@ -85,7 +85,7 @@ public class OutExcel {
         }
         return wb;
     }
-    public static HSSFWorkbook exportUserInfo(List<UserInfo> list) {
+  /*  public static HSSFWorkbook exportUserInfo(List<UserInfo> list) {
         String[] excelHeader = {"账号", "性别", "昵称", "注册时间", "生日", "标签"};
         HSSFWorkbook wb = new HSSFWorkbook();
         HSSFSheet sheet = wb.createSheet("UserInfo");
@@ -113,7 +113,7 @@ public class OutExcel {
             row.createCell(4).setCellValue(student.getLable());
         }
         return wb;
-    }
+    }*/
 
 }
 
