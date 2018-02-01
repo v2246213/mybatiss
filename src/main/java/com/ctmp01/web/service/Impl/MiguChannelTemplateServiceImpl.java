@@ -1,4 +1,4 @@
-package com.ctmp01.web.service.impl;
+package com.ctmp01.web.service.Impl;
 
 import com.ctmp01.web.entity.MiguChannelTemplate;
 import com.ctmp01.web.mapper.MiguChannelTemplateMapper;
