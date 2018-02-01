@@ -13,7 +13,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author 
- * @since 2017-09-30
+ * @since 2017-09-29
  */
 @TableName("t_migu_channel_template")
 public class MiguChannelTemplate extends Model<MiguChannelTemplate> {

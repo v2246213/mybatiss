@@ -63,7 +63,7 @@ public class MpGenerator {
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("123456");
-        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/ctmp?characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/mydb?characterEncoding=utf8");
         mpg.setDataSource(dsc);
 
         // 策略配置
@@ -73,8 +73,7 @@ public class MpGenerator {
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
         // strategy.setDbColumnUnderline(true);
         strategy.setInclude(new String[] {
-                "t_migu_case_manage"
-
+                "menu",
 
         }); // 需要生成的表
         // strategy.setExclude(new String[]{"test"}); // 排除生成的表

@@ -1,7 +1,11 @@
 package com.ctmp01.web.controller;
 
+import com.ctmp01.web.entity.MiguChannelTemplate;
+import com.ctmp01.web.service.MiguChannelTemplateService;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
 
 /**
  * <p>
@@ -9,10 +13,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * </p>
  *
  * @author 
- * @since 2017-09-30
+ * @since 2017-09-29
  */
-@Controller
+ @RestController
 @RequestMapping("/web/miguChannelTemplate")
 public class MiguChannelTemplateController {
-	
+    @Resource
+    private MiguChannelTemplateService miguChannelTemplateService;
+@PostMapping("/selectMiguChannelTemplate")
+    public Boolean selectMiguChannelTemplate(@RequestBody  MiguChannelTemplate miguChannelTemplate){
+   Boolean l= miguChannelTemplateService.updateById(miguChannelTemplate);
+        return l;
+    }
 }

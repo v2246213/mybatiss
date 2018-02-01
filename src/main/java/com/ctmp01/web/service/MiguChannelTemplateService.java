@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.service.IService;
  * </p>
  *
  * @author 
- * @since 2017-09-30
+ * @since 2017-09-29
  */
 public interface MiguChannelTemplateService extends IService<MiguChannelTemplate> {
 	
