@@ -22,7 +22,7 @@ import java.util.*;
 public class MenuController {
     @Resource
     private MenuService menuService;
-    //..
+
     @GetMapping("/tree")
     public Map<String,Object> findTree(){
         Map<String,Object> data = new HashMap<String,Object>();
