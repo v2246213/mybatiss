@@ -137,7 +137,7 @@ mybatis:
 # 线上环境
 # app
 server:
-    port: 8081
+    port: 8888
 
 # spring
 spring:
@@ -150,8 +150,8 @@ spring:
       prefix: /WEB-INF/view/
       suffix: .jsp
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/mydb?useUnicode=true&characterEncoding=utf8&useSSL=false
-    username: root
+    url: jdbc:mysql://120.79.164.219:3306/mydb?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: yangnian
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
